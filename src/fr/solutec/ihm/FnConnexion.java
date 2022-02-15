@@ -116,7 +116,9 @@ public class FnConnexion extends javax.swing.JFrame {
     }//GEN-LAST:event_btConnexionActionPerformed
 
     private void btInscriptionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btInscriptionActionPerformed
-        new FnInscription().setVisible(true);
+        FnInscription i = new FnInscription();
+        i.setVisible(true);
+        this.setVisible(false);
     }//GEN-LAST:event_btInscriptionActionPerformed
 
     /**

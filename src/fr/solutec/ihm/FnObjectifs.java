@@ -27,21 +27,217 @@ public class FnObjectifs extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jPanel1 = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        tableObj = new javax.swing.JTable();
+        btAjouter = new javax.swing.JButton();
+        btRetour = new javax.swing.JButton();
+        jPanelIdModifSuppr = new javax.swing.JPanel();
+        btModifier = new javax.swing.JButton();
+        btSupprimer = new javax.swing.JButton();
+        lblSelectId = new javax.swing.JLabel();
+        txtId = new javax.swing.JTextField();
+        btHistorique = new javax.swing.JButton();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        addWindowListener(new java.awt.event.WindowAdapter() {
+            public void windowOpened(java.awt.event.WindowEvent evt) {
+                formWindowOpened(evt);
+            }
+        });
+
+        jLabel1.setFont(new java.awt.Font("Consolas", 1, 36)); // NOI18N
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel1.setText("Objectifs");
+
+        tableObj.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
+            },
+            new String [] {
+                "Title 1", "Title 2", "Title 3", "Title 4"
+            }
+        ));
+        jScrollPane1.setViewportView(tableObj);
+
+        btAjouter.setFont(new java.awt.Font("Consolas", 0, 14)); // NOI18N
+        btAjouter.setText("Ajouter un objectif");
+        btAjouter.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btAjouterActionPerformed(evt);
+            }
+        });
+
+        btRetour.setFont(new java.awt.Font("Consolas", 0, 14)); // NOI18N
+        btRetour.setText("Retour");
+        btRetour.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btRetourActionPerformed(evt);
+            }
+        });
+
+        jPanelIdModifSuppr.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+
+        btModifier.setFont(new java.awt.Font("Consolas", 0, 14)); // NOI18N
+        btModifier.setText("Modifier");
+        btModifier.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btModifierActionPerformed(evt);
+            }
+        });
+
+        btSupprimer.setFont(new java.awt.Font("Consolas", 0, 14)); // NOI18N
+        btSupprimer.setText("Supprimer");
+        btSupprimer.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btSupprimerActionPerformed(evt);
+            }
+        });
+
+        lblSelectId.setFont(new java.awt.Font("Consolas", 0, 14)); // NOI18N
+        lblSelectId.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblSelectId.setText("Selection de l'id");
+
+        txtId.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+
+        javax.swing.GroupLayout jPanelIdModifSupprLayout = new javax.swing.GroupLayout(jPanelIdModifSuppr);
+        jPanelIdModifSuppr.setLayout(jPanelIdModifSupprLayout);
+        jPanelIdModifSupprLayout.setHorizontalGroup(
+            jPanelIdModifSupprLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelIdModifSupprLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanelIdModifSupprLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(lblSelectId, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelIdModifSupprLayout.createSequentialGroup()
+                        .addComponent(btModifier)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(btSupprimer))
+                    .addComponent(txtId))
+                .addContainerGap())
+        );
+        jPanelIdModifSupprLayout.setVerticalGroup(
+            jPanelIdModifSupprLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelIdModifSupprLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(lblSelectId)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(txtId, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanelIdModifSupprLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btSupprimer)
+                    .addComponent(btModifier))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        btHistorique.setFont(new java.awt.Font("Consolas", 0, 14)); // NOI18N
+        btHistorique.setText("Historique");
+        btHistorique.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btHistoriqueActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addContainerGap())
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 417, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                        .addGap(164, 164, 164)
+                                        .addComponent(btRetour))
+                                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                        .addGap(33, 33, 33)
+                                        .addComponent(btAjouter)))
+                                .addGap(0, 15, Short.MAX_VALUE))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jPanelIdModifSuppr, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addContainerGap())
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGap(71, 71, 71)
+                                .addComponent(btHistorique)
+                                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))))
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel1)
+                .addGap(18, 18, 18)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 360, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(btAjouter)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jPanelIdModifSuppr, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(btHistorique)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(btRetour)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btRetourActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btRetourActionPerformed
+        FnPrincipal p = new FnPrincipal();
+        p.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_btRetourActionPerformed
+
+    private void btAjouterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btAjouterActionPerformed
+        FnAjoutObjectif ao = new FnAjoutObjectif();
+        ao.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_btAjouterActionPerformed
+
+    private void btModifierActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btModifierActionPerformed
+        FnModifierObjectif mo = new FnModifierObjectif();
+        mo.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_btModifierActionPerformed
+
+    private void btSupprimerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btSupprimerActionPerformed
+        FnSupprimerObjectif so = new FnSupprimerObjectif();
+        so.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_btSupprimerActionPerformed
+
+    private void btHistoriqueActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btHistoriqueActionPerformed
+        FnHistoriqueObjectif ho = new FnHistoriqueObjectif();
+        ho.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_btHistoriqueActionPerformed
+
+    private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened
+        txtId.setText("");
+    }//GEN-LAST:event_formWindowOpened
 
     /**
      * @param args the command line arguments
@@ -79,5 +275,17 @@ public class FnObjectifs extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btAjouter;
+    private javax.swing.JButton btHistorique;
+    private javax.swing.JButton btModifier;
+    private javax.swing.JButton btRetour;
+    private javax.swing.JButton btSupprimer;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanelIdModifSuppr;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JLabel lblSelectId;
+    private javax.swing.JTable tableObj;
+    private javax.swing.JTextField txtId;
     // End of variables declaration//GEN-END:variables
 }
