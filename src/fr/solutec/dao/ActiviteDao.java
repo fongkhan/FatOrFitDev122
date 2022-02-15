@@ -60,7 +60,7 @@ public class ActiviteDao {
     }
     
     */
-    public static void main(String[] args) {
+    /*public static void main(String[] args) {
         
         Activite A = new Activite();
         A.setIdUser(1);
@@ -74,5 +74,5 @@ public class ActiviteDao {
         }catch (Exception e){
             System.out.println(e.getMessage());
         }
-    }
+    }*/
 }
