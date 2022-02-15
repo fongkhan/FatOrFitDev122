@@ -25,20 +25,50 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="1" attributes="0">
               <EmptySpace min="-2" pref="55" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="lbPassword" min="-2" max="-2" attributes="0"/>
-                  <Component id="lbLogin" min="-2" max="-2" attributes="0"/>
-                  <Component id="lbNom" min="-2" max="-2" attributes="0"/>
-                  <Component id="btConnexion" min="-2" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="1" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                      <Component id="lbAge" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="162" max="-2" attributes="0"/>
+                      <Component id="txtAge" min="-2" pref="75" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="1" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="lbPassword" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lbLogin" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lbNom" min="-2" max="-2" attributes="0"/>
+                                  <Component id="btConnexion" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lbPrenom" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lbSexe" alignment="0" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="32767" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="1" attributes="0">
+                              <Component id="lbPoids" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="156" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="txtPoids" min="-2" pref="75" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                              <Component id="btInscriptionI" max="32767" attributes="0"/>
+                              <Component id="txtMdp" max="32767" attributes="0"/>
+                              <Component id="txtNom" max="32767" attributes="0"/>
+                              <Component id="txtPrenom" max="32767" attributes="0"/>
+                          </Group>
+                          <Component id="txtLogin" min="-2" pref="75" max="-2" attributes="0"/>
+                          <Component id="txtSexe" min="-2" pref="75" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <Group type="102" alignment="1" attributes="0">
+                      <Component id="lbMail" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
+                      <Component id="txtMail" min="-2" pref="75" max="-2" attributes="0"/>
+                  </Group>
               </Group>
-              <EmptySpace pref="118" max="32767" attributes="0"/>
-              <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                  <Component id="btInscriptionI" min="-2" max="-2" attributes="0"/>
-                  <Component id="txtLogin" max="32767" attributes="0"/>
-                  <Component id="txtMdp" max="32767" attributes="0"/>
-                  <Component id="txtNom" max="32767" attributes="0"/>
-              </Group>
-              <EmptySpace min="-2" pref="62" max="-2" attributes="0"/>
+              <EmptySpace min="81" pref="81" max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -50,22 +80,52 @@
                   <Component id="lbNom" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="txtNom" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="lbLogin" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="txtLogin" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="lbPrenom" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtPrenom" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <Component id="lbLogin" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="1" attributes="0">
+                      <Component id="txtLogin" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
+              </Group>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="lbPassword" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="txtMdp" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="lbPassword" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace pref="65" max="32767" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="lbMail" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtMail" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="lbAge" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtAge" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="lbPoids" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtPoids" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="lbSexe" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtSexe" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace pref="9" max="32767" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="btInscriptionI" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="btConnexion" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace min="-2" pref="60" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -107,6 +167,41 @@
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btConnexionActionPerformed"/>
       </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lbPrenom">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Pr&#xe9;nom"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtPrenom">
+    </Component>
+    <Component class="javax.swing.JLabel" name="lbMail">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="e-mail"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lbAge">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Age"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lbPoids">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Poids"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lbSexe">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Sexe"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtSexe">
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtAge">
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtPoids">
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtMail">
     </Component>
   </SubComponents>
 </Form>

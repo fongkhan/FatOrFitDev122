@@ -39,6 +39,16 @@ public class FnInscription extends javax.swing.JFrame {
         txtLogin = new javax.swing.JTextField();
         txtMdp = new javax.swing.JPasswordField();
         btConnexion = new javax.swing.JButton();
+        lbPrenom = new javax.swing.JLabel();
+        txtPrenom = new javax.swing.JTextField();
+        lbMail = new javax.swing.JLabel();
+        lbAge = new javax.swing.JLabel();
+        lbPoids = new javax.swing.JLabel();
+        lbSexe = new javax.swing.JLabel();
+        txtSexe = new javax.swing.JTextField();
+        txtAge = new javax.swing.JTextField();
+        txtPoids = new javax.swing.JTextField();
+        txtMail = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -62,24 +72,56 @@ public class FnInscription extends javax.swing.JFrame {
             }
         });
 
+        lbPrenom.setText("Prénom");
+
+        lbMail.setText("e-mail");
+
+        lbAge.setText("Age");
+
+        lbPoids.setText("Poids");
+
+        lbSexe.setText("Sexe");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addGap(55, 55, 55)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(lbPassword)
-                    .addComponent(lbLogin)
-                    .addComponent(lbNom)
-                    .addComponent(btConnexion))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 118, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(btInscriptionI)
-                    .addComponent(txtLogin)
-                    .addComponent(txtMdp)
-                    .addComponent(txtNom))
-                .addGap(62, 62, 62))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(lbAge)
+                        .addGap(162, 162, 162)
+                        .addComponent(txtAge, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(lbPassword)
+                                    .addComponent(lbLogin)
+                                    .addComponent(lbNom)
+                                    .addComponent(btConnexion)
+                                    .addComponent(lbPrenom)
+                                    .addComponent(lbSexe))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                .addComponent(lbPoids)
+                                .addGap(156, 156, 156)))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(txtPoids, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                .addComponent(btInscriptionI, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(txtMdp)
+                                .addComponent(txtNom)
+                                .addComponent(txtPrenom))
+                            .addComponent(txtLogin, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtSexe, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(lbMail)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(txtMail, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(81, 81, 81))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -88,31 +130,86 @@ public class FnInscription extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lbNom)
                     .addComponent(txtNom, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(21, 21, 21)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lbLogin)
-                    .addComponent(txtLogin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(22, 22, 22)
+                    .addComponent(lbPrenom)
+                    .addComponent(txtPrenom, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(lbLogin)
+                        .addGap(15, 15, 15))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addComponent(txtLogin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)))
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lbPassword)
-                    .addComponent(txtMdp, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 65, Short.MAX_VALUE)
+                    .addComponent(txtMdp, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lbPassword))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lbMail)
+                    .addComponent(txtMail, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(lbAge)
+                    .addComponent(txtAge, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(lbPoids)
+                    .addComponent(txtPoids, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(lbSexe)
+                    .addComponent(txtSexe, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 9, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btInscriptionI)
                     .addComponent(btConnexion))
-                .addGap(60, 60, 60))
+                .addGap(22, 22, 22))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
+private int age;
+private int sexe;
+private float poids;
+    
     private void btInscriptionIActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btInscriptionIActionPerformed
         String nom = txtNom.getText();
+        String prenom = txtPrenom.getText();
         String login = txtLogin.getText();
         String mdp = txtMdp.getText();
+        String mail = txtMail.getText();
+        String strAge = txtSexe.getText(); 
+        if (strAge.length() > 0) {
+            age = Integer.parseInt(strAge);
+        }
+        String strPoids = txtPoids.getText(); 
+        if (strPoids.length() > 0) {
+            poids = Float.parseFloat (strPoids);
+        }
+        String strSexe = txtSexe.getText(); 
+        if (strSexe.length() > 0) {
+            sexe = Integer.parseInt(strSexe);
+        }
+        
+        
         try {
-            UserDao.insertUser(new User(0,nom,login,mdp));
+            
+            User u = new User();
+            u.setNom(nom);
+            u.setPrenom(prenom);
+            u.setLogin(login);
+            u.setMdp(mdp);
+            u.setMail(mail);
+            u.setAge(age);
+            u.setPoids(poids);
+            u.setSexe(sexe);
+            
+            UserDao.insertUser(u);
             this.setVisible(false);
+            JOptionPane.showMessageDialog(rootPane, "Vous êtes bien inscris");
+            new FnConnexion().setVisible(true);
         } catch (Exception e){
             JOptionPane.showMessageDialog(rootPane, e.getMessage());
         }
@@ -159,11 +256,21 @@ public class FnInscription extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btConnexion;
     private javax.swing.JToggleButton btInscriptionI;
+    private javax.swing.JLabel lbAge;
     private javax.swing.JLabel lbLogin;
+    private javax.swing.JLabel lbMail;
     private javax.swing.JLabel lbNom;
     private javax.swing.JLabel lbPassword;
+    private javax.swing.JLabel lbPoids;
+    private javax.swing.JLabel lbPrenom;
+    private javax.swing.JLabel lbSexe;
+    private javax.swing.JTextField txtAge;
     private javax.swing.JTextField txtLogin;
+    private javax.swing.JTextField txtMail;
     private javax.swing.JPasswordField txtMdp;
     private javax.swing.JTextField txtNom;
+    private javax.swing.JTextField txtPoids;
+    private javax.swing.JTextField txtPrenom;
+    private javax.swing.JTextField txtSexe;
     // End of variables declaration//GEN-END:variables
 }

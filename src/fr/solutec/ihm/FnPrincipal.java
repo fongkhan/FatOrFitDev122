@@ -58,6 +58,11 @@ public class FnPrincipal extends javax.swing.JFrame {
 
         btDeconnexion.setFont(new java.awt.Font("Consolas", 1, 14)); // NOI18N
         btDeconnexion.setText("Déconnexion");
+        btDeconnexion.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btDeconnexionActionPerformed(evt);
+            }
+        });
 
         btAide.setFont(new java.awt.Font("Consolas", 1, 14)); // NOI18N
         btAide.setText("Aide");
@@ -139,6 +144,12 @@ public class FnPrincipal extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btDeconnexionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btDeconnexionActionPerformed
+        // TODO add your handling code here:
+        this.setVisible(false);
+        new FnConnexion().setVisible(true);
+    }//GEN-LAST:event_btDeconnexionActionPerformed
 
     /**
      * @param args the command line arguments
